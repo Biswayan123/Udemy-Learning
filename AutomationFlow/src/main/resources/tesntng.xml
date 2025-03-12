@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="BStack Demo" thread-count="3" parallel="tests">
+	
+	<test name="ChromeTest">
+		<parameter name="browsername" value="Chrome">
+			<classes>
+				<class name="com.auto.qa.testflow.StepstoAutomate"></class>
+			</classes>
+		</parameter>
+	</test>
+	
+	<test name="FireFoxTest">
+		<parameter name="browsername" value="Firefox">
+			<classes>
+				<class name="com.auto.qa.testflow.StepstoAutomate"></class>
+			</classes>
+		</parameter>
+	</test>
+	
+	<test name="SafariTest">
+		<parameter name="browsername" value="Safari">
+			<classes>
+				<class name="com.auto.qa.testflow.StepstoAutomate"></class>
+			</classes>
+		</parameter>
+	</test>
+</suite>
